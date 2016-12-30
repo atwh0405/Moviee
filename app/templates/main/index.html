@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}Moviee{% endblock %}
+
+{% block content %}
+<div class="container content">
+	<div class="row">
+		<div class="col-md-9 column">
+            <a>
+                <button class="btn btn-info">更新数据库</button>
+            </a>
+		</div>
+	</div>
+</div>
+{{ super() }}
+{% endblock content %}
+
+{% block scripts %}
+{{ super() }}
+{{ moment.include_moment() }}
+<script type="text/javascript">
+    //
+      $(document).ready(function() {
+
+      });
+</script>
+{% endblock scripts %}
